@@ -8,3 +8,5 @@ The program uses a Tfidfvectoriser library from sklearn. Often times, when build
 Term Frequency (TF): The number of times a word appears in a document divded by the total number of words in the document. Every document has its own term frequency.
 
 Inverse Data Frequency (IDF): The log of the number of documents divided by the number of documents that contain the word 'w'. Inverse data frequency determines the weight of rare words across all documents in the corpus.
+
+It also uses a Passiveaggressive Classifier. These are online learning algorithms. Such an algorithm remains passive for a correct classification outcome, and turns aggressive in the event of a miscalculation, updating and adjusting. Unlike most other algorithms, it does not converge. Its purpose is to make updates that correct the loss, causing very little change in the norm of the weight vector.
